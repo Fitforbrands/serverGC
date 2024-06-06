@@ -4,7 +4,7 @@ import express from "express";
 import bodyParse from "body-parser";
 import { readFile } from "fs/promises"; // para importar un archivo JSON
 const app = express();
-app.use(bodyParse.urlencoded({ extend: true }));
+app.use(bodyParse.urlencoded({ extended: true }));
 app.use(bodyParse.json());
 
 const PORT = process.env.PORT || 3977;
