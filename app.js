@@ -13,6 +13,6 @@ app.get("/fletes", (req, res) => {
   res.send(fletes);
 });
 
-app.listen(8081, () => {
+app.listen("servergc-production.up.railway.app", () => {
   console.log("puerto conectado: 8080");
 });
