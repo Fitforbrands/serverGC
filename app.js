@@ -4,7 +4,7 @@ import { readFile } from "fs/promises"; // para importar un archivo JSON
 import cors from "cors";
 
 const app = express();
-const whitelist = ["https://fletesjs.netlify.app/"];
+const whitelist = ["https://fletesjs.netlify.app/", "http://localhost:5500/"];
 const corsoptions = {
   origin: function (origin, callback) {
     if (whitelist.indexOf(origin) !== -1 || !origin) {
