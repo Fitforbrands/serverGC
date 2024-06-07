@@ -5,23 +5,23 @@ import cors from "cors";
 
 const app = express();
 
-// const whitelist = [
-//   "https://fletesjs.netlify.app/",
-//   "https://fletesjs.netlify.app/paginas/zonastodas",
-// ];
-// const corsOptions = {
-//   origin: function (origin, callback) {
-//     if (whitelist.indexOf(origin) !== -1 || !origin) {
-//       callback(null, true);
-//     } else {
-//       callback(new Error("Not allowed by CORS"));
-//     }
-//   },
-// };
+const whitelist = [
+  "https://fletesjs.netlify.app/",
+  "https://fletesjs.netlify.app/paginas/zonastodas",
+];
+const corsOptions = {
+  origin: function (origin, callback) {
+    if (whitelist.indexOf(origin) !== -1 || !origin) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+};
+console.log(corsOptions);
 
-// app.use(cors(corsOptions));
-
-app.use(cors());
+app.use(cors(corsOptions));
+// app.use(cors());
 app.use(bodyParse.urlencoded({ extended: true }));
 app.use(bodyParse.json());
 
