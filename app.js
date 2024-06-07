@@ -1,10 +1,11 @@
 import express from "express";
-// const bodyParse = require("body-parser");
-
 import bodyParse from "body-parser";
 import { readFile } from "fs/promises"; // para importar un archivo JSON
+import cors from "cors";
+
 const app = express();
 
+app.use(cors());
 app.use(bodyParse.urlencoded({ extended: true }));
 app.use(bodyParse.json());
 
