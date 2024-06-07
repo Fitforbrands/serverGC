@@ -4,7 +4,18 @@ import { readFile } from "fs/promises"; // para importar un archivo JSON
 import cors from "cors";
 
 const app = express();
+const whitelist = ["https://fletesjs.netlify.app/"];
+const corsoptions = {
+  origin: function (origin, callback) {
+    if (whitelist.indexOf(origin) !== -1 || !origin) {
+      callback(null, true);
+    } else {
+      calback(new Error("Not allowed by CORS"));
+    }
+  },
+};
 
+app.use(cors(corsoptions));
 app.use(cors());
 app.use(bodyParse.urlencoded({ extended: true }));
 app.use(bodyParse.json());
