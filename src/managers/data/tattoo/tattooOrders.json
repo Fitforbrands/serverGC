@@ -1,0 +1,49 @@
+[
+  {
+    "order": {
+      "orderId": "sdhsiu291930",
+      "status": "paid",
+      "orderDate": "23/6/2024",
+      "scheduleDay": "",
+      "scheduleHour": ""
+    },
+    "prof": {
+      "profId": "arcprof151"
+    },
+    "client": {
+      "clientId": "dweiu2334",
+      "name": "Gabriel",
+      "lastName": "Capuia",
+      "email": "gabriel@fitforbrands.com",
+      "totalOrders": 1
+    },
+    "tattooData": {
+      "lettering": {
+        "select": true,
+        "letterType": "serif",
+        "width": 2,
+        "height": 10,
+        "color": false,
+        "line": "fine",
+        "tattooPlace": "clasico",
+        "orderComments": "Lorem ipsum"
+      },
+      "ilustration": {
+        "select": false,
+        "ilustrationType": "micro",
+        "width": 2,
+        "height": 10,
+        "color": false,
+        "line": "fine",
+        "tattooPlace": "lugar",
+        "orderComments": "Lorem ipsum"
+      },
+      "Special": {
+        "select": false,
+        "tattooPlace": "lugar",
+        "SesionType": "Chica",
+        "orderComments": "Lorem ipsum"
+      }
+    }
+  }
+]

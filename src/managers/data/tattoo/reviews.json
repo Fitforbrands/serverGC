@@ -1,0 +1,18 @@
+[
+  {
+    "reviewId": "arc1345",
+    "clientId": "dweiu2334",
+    "rate": "good",
+    "comment": "Lorem ipsum",
+    "date": "23/6/2024",
+    "status": "published"
+  },
+  {
+    "reviewId": "arc1345",
+    "clientId": "dweiu2334",
+    "rate": "good",
+    "comment": "Lorem ipsum",
+    "date": "23/6/2024",
+    "status": "published"
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "company": {
+      "companyId": "arc995",
+      "companyName": "Arcapt",
+      "companyEmail": "arcapt@gmail.com",
+      "companyphone": "541151493445",
+      "startDate": "01/06/2024"
+    },
+    "companyUsers": [
+      {
+        "profId": "arcprof151",
+        "name": "Ariana",
+        "rol": "artist",
+        "email": "ariana.capuia@gmail",
+        "startDate": "01/06/2024"
+      },
+      {
+        "userId": "arcprof152",
+        "name": "Nahuel",
+        "rol": "artist",
+        "email": "gabriel@fitforbrands.com",
+        "startDate": "01/06/2024"
+      }
+    ]
+  }
+]
