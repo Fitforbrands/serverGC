@@ -9,6 +9,8 @@ let requestOptions = {
   redirect: "follow",
 };
 
+//  GET de list
+
 fetch(url, requestOptions)
   .then((response) => response.text())
   .then((result) => buscaEnOrdenes(result))
