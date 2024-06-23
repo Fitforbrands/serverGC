@@ -11,7 +11,7 @@ router.get("/fletes", async (req, res) => {
   res.send(products);
 });
 
-// GET Products by ID
+// GET Products by ID probar servicio en postman
 
 router.get("/flete/:pid", async (req, res) => {
   try {
