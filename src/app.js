@@ -20,6 +20,7 @@ app.use((req, res, next) => {
 
 app.use(bodyParse.urlencoded({ extended: true }));
 app.use(bodyParse.json());
+app.use(express.static("public"));
 app.use("/api", fletesRouter);
 app.use("/api", tattooRouter);
 
