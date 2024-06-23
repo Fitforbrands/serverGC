@@ -14,6 +14,8 @@ fetch(url, requestOptions)
   .then((result) => buscaEnOrdenes(result))
   .catch((error) => console.log("error", error));
 
+// busca los parametros indicados con un map
+
 function buscaEnOrdenes(result) {
   const pedidos = JSON.parse(result);
   console.log(pedidos);
