@@ -1,7 +1,7 @@
 const listOrders = document.querySelector(".listOrdenes");
 const total = document.querySelector(".total");
 
-const url = "http://127.0.0.1:3977/api/orders";
+const url = "http://127.0.0.1:3000/api/orders";
 let data;
 
 let requestOptions = {

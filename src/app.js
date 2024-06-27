@@ -26,10 +26,10 @@ app.use("/api", tattooRouter);
 
 // listen port
 
-const PORT = process.env.PORT || 3977;
+const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
-  console.log("puerto conectado: 3977");
+  console.log("puerto conectado: 3000");
 });
 
 // const whitelist = [
